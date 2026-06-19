@@ -1,0 +1,93 @@
+[package]
+name = "dx-icons"
+version = "0.1.0"
+edition = "2024"
+authors = ["DX Team"]
+description = "World's fastest icon search engine with FST, rkyv, and semantic search"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["gpu", "rayon"]
+gpu = ["wgpu", "pollster", "futures-intrusive", "simsimd"]
+wasm = ["wasm-bindgen", "serde-wasm-bindgen", "js-sys", "web-sys"]
+
+[[bin]]
+name = "search_cli"
+path = "src/bin/search_cli.rs"
+
+[[bin]]
+name = "build_index"
+path = "src/bin/build_index.rs"
+
+[[bin]]
+name = "icon"
+path = "src/bin/icon.rs"
+
+[[bin]]
+name = "generate_svgl"
+path = "src/bin/generate_svgl.rs"
+
+[dependencies]
+# Zero-copy serialization
+rkyv = "0.8"
+bytemuck = { version = "1.19", features = ["derive"] }
+
+# Compact data structures
+fst = "0.4"
+
+# Fast JSON parsing (SIMD-accelerated)
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+
+# Compression
+lz4_flex = "0.11"
+memmap2 = "0.9"
+
+# Error handling
+anyhow = "1.0"
+
+# Parallel processing
+rayon = { version = "1.10", optional = true }
+
+# WASM support
+wasm-bindgen = { version = "0.2", optional = true }
+serde-wasm-bindgen = { version = "0.6", optional = true }
+js-sys = { version = "0.3", optional = true }
+web-sys = { version = "0.3", features = ["console"], optional = true }
+getrandom = { version = "0.3", features = ["wasm_js"] }
+
+# Error handling
+
+# Fuzzy matching (SIMD-accelerated Levenshtein)
+triple_accel = "0.4"
+nucleo-matcher = "0.3"
+
+# PERFORMANCE OPTIMIZATIONS (Phase 1)
+ahash = "0.8"           # 2x faster HashMap
+memchr = "2.7"          # SIMD string search
+smallvec = "1.13"       # Stack-allocated vectors
+
+# ADVANCED OPTIMIZATIONS (Phase 2)
+dashmap = "6.1"         # Lock-free concurrent HashMap
+bumpalo = "3.16"        # Arena allocator (5x faster)
+
+# GAME-CHANGING OPTIMIZATIONS (2026)
+# Wizer for pre-initialization (instant WASM startup)
+# Note: Applied at build time, not runtime dependency
+
+# ULTRA-PERFORMANCE (Phase 3 - 2026)
+simsimd = { version = "6.2", optional = true }         # 200x faster similarity metrics (AVX-512)
+branches = "0.3"        # Branch prediction hints
+aho-corasick = "1.1"    # Multi-pattern matching O(N+M)
+daachorse = "1.0"       # Fastest double-array AC automaton
+
+# GPU ACCELERATION (Phase 4 - 2026)
+wgpu = { version = "23.0", optional = true }                    # WebGPU for compute shaders
+pollster = { version = "0.4", optional = true }                 # Async runtime for GPU
+futures-intrusive = { version = "0.5", optional = true }        # Async channels
+
+[dev-dependencies]
+criterion = "0.5"

@@ -1,0 +1,70 @@
+{
+  "assets": [
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://randomfox.ca/images/25.jpg",
+      "height": null,
+      "id": "fox_25.jpg",
+      "license": "RandomFox - Free",
+      "media_type": "image",
+      "preview_url": "https://randomfox.ca/images/25.jpg",
+      "provider": "randomfox",
+      "source_url": "https://randomfox.ca/?i=25",
+      "tags": [
+        "fox",
+        "animal",
+        "wildlife"
+      ],
+      "title": "Fox photo #1",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://randomfox.ca/images/5.jpg",
+      "height": null,
+      "id": "fox_5.jpg",
+      "license": "RandomFox - Free",
+      "media_type": "image",
+      "preview_url": "https://randomfox.ca/images/5.jpg",
+      "provider": "randomfox",
+      "source_url": "https://randomfox.ca/?i=5",
+      "tags": [
+        "fox",
+        "animal",
+        "wildlife"
+      ],
+      "title": "Fox photo #2",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://randomfox.ca/images/84.jpg",
+      "height": null,
+      "id": "fox_84.jpg",
+      "license": "RandomFox - Free",
+      "media_type": "image",
+      "preview_url": "https://randomfox.ca/images/84.jpg",
+      "provider": "randomfox",
+      "source_url": "https://randomfox.ca/?i=84",
+      "tags": [
+        "fox",
+        "animal",
+        "wildlife"
+      ],
+      "title": "Fox photo #3",
+      "width": null
+    }
+  ],
+  "duration_ms": 2138,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "randomfox"
+  ],
+  "query": "fox",
+  "returned_count": 3,
+  "total_count": 3
+}

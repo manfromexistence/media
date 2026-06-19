@@ -1,0 +1,59 @@
+{
+    "collection": {
+        "items": [
+            {
+                "href": "https://images-api.nasa.gov/asset/PIA00001",
+                "data": [
+                    {
+                        "nasa_id": "PIA00001",
+                        "title": "Mars Surface",
+                        "media_type": "image",
+                        "description": "A view of the Martian surface",
+                        "center": "JPL",
+                        "date_created": "1997-01-01T00:00:00Z",
+                        "keywords": [
+                            "Mars",
+                            "Surface",
+                            "Planet"
+                        ]
+                    }
+                ],
+                "links": [
+                    {
+                        "href": "https://images-assets.nasa.gov/image/PIA00001/PIA00001~thumb.jpg",
+                        "rel": "preview",
+                        "render": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-api.nasa.gov/asset/PIA00002",
+                "data": [
+                    {
+                        "nasa_id": "PIA00002",
+                        "title": "Earth from Space",
+                        "media_type": "image",
+                        "description": "Earth as seen from orbit",
+                        "center": "GSFC",
+                        "date_created": "2020-04-22T00:00:00Z",
+                        "keywords": [
+                            "Earth",
+                            "Space",
+                            "Blue Marble"
+                        ]
+                    }
+                ],
+                "links": [
+                    {
+                        "href": "https://images-assets.nasa.gov/image/PIA00002/PIA00002~thumb.jpg",
+                        "rel": "preview",
+                        "render": "image"
+                    }
+                ]
+            }
+        ],
+        "metadata": {
+            "total_hits": 2
+        }
+    }
+}

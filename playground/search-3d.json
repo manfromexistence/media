@@ -1,0 +1,136 @@
+{
+  "assets": [
+    {
+      "author": "Kirill Sannikov",
+      "author_url": null,
+      "download_url": "https://polyhaven.com/a/painted_wooden_sofa",
+      "height": null,
+      "id": "painted_wooden_sofa",
+      "license": "CC0",
+      "media_type": "model3d",
+      "preview_url": "https://cdn.polyhaven.com/asset_img/thumbs/painted_wooden_sofa.png?height=256",
+      "provider": "polyhaven",
+      "source_url": "https://polyhaven.com/a/painted_wooden_sofa",
+      "tags": [
+        "chair",
+        "outdoor",
+        "couch",
+        "wooden",
+        "vintage",
+        "aged"
+      ],
+      "title": "Painted Wooden Sofa",
+      "width": null
+    },
+    {
+      "author": "Jake Mobley",
+      "author_url": null,
+      "download_url": "https://polyhaven.com/a/WoodenChair_01",
+      "height": null,
+      "id": "WoodenChair_01",
+      "license": "CC0",
+      "media_type": "model3d",
+      "preview_url": "https://cdn.polyhaven.com/asset_img/thumbs/WoodenChair_01.png?height=256",
+      "provider": "polyhaven",
+      "source_url": "https://polyhaven.com/a/WoodenChair_01",
+      "tags": [
+        "wood",
+        "prop",
+        "vintage",
+        "furniture",
+        "chair",
+        "gothic",
+        "victorian",
+        "decorative"
+      ],
+      "title": "Wooden Chair 01",
+      "width": null
+    },
+    {
+      "author": "Kuutti Siitonen",
+      "author_url": null,
+      "download_url": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "height": null,
+      "id": "mid_century_lounge_chair",
+      "license": "CC0",
+      "media_type": "model3d",
+      "preview_url": "https://cdn.polyhaven.com/asset_img/thumbs/mid_century_lounge_chair.png?height=256",
+      "provider": "polyhaven",
+      "source_url": "https://polyhaven.com/a/mid_century_lounge_chair",
+      "tags": [
+        "wooden",
+        "leather",
+        "couch",
+        "lounge",
+        "architecture",
+        "modern",
+        "interior design",
+        "home decor",
+        "living room",
+        "comfort",
+        "stylish",
+        "recliner",
+        "retro",
+        "classy"
+      ],
+      "title": "Mid Century Lounge Chair",
+      "width": null
+    },
+    {
+      "author": "Kuutti Siitonen",
+      "author_url": null,
+      "download_url": "https://polyhaven.com/a/painted_wooden_chair_01",
+      "height": null,
+      "id": "painted_wooden_chair_01",
+      "license": "CC0",
+      "media_type": "model3d",
+      "preview_url": "https://cdn.polyhaven.com/asset_img/thumbs/painted_wooden_chair_01.png?height=256",
+      "provider": "polyhaven",
+      "source_url": "https://polyhaven.com/a/painted_wooden_chair_01",
+      "tags": [
+        "chair",
+        "wood",
+        "painted",
+        "farmhouse",
+        "dining",
+        "diner",
+        "american",
+        "kitchen"
+      ],
+      "title": "Painted Wooden Chair 01",
+      "width": null
+    },
+    {
+      "author": "Garreth Dean",
+      "author_url": null,
+      "download_url": "https://polyhaven.com/a/wheelchair_01",
+      "height": null,
+      "id": "wheelchair_01",
+      "license": "CC0",
+      "media_type": "model3d",
+      "preview_url": "https://cdn.polyhaven.com/asset_img/thumbs/wheelchair_01.png?height=256",
+      "provider": "polyhaven",
+      "source_url": "https://polyhaven.com/a/wheelchair_01",
+      "tags": [
+        "infirmary",
+        "hospital",
+        "wheelchair",
+        "medical",
+        "clinic",
+        "mobilityaid",
+        "foldingwheelchair"
+      ],
+      "title": "Wheelchair 01",
+      "width": null
+    }
+  ],
+  "duration_ms": 69,
+  "media_type": "model3d",
+  "provider_errors": [],
+  "providers_searched": [
+    "polyhaven"
+  ],
+  "query": "chair",
+  "returned_count": 5,
+  "total_count": 5
+}

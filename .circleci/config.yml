@@ -1,0 +1,90 @@
+version: 2.1
+
+commands:
+  prepare_unix_workspace:
+    steps:
+      - run:
+          name: Checkout sibling Cargo dependencies
+          command: |
+            set -euo pipefail
+            fallback_branch="dev"
+            default_owner="millercarla211-ctrl"
+
+            clone_dx_dependency() {
+              name="$1"
+              repository="$2"
+              target="../${name}"
+              if [ -d "${target}/.git" ]; then
+                echo "Dependency ${name} already exists at ${target}"
+                return 0
+              fi
+              branch="${CIRCLE_BRANCH:-$fallback_branch}"
+              owner="${DX_GITHUB_OWNER:-$default_owner}"
+              url="https://github.com/${owner}/${repository}.git"
+              clone_dependency() {
+                selected_branch="$1"
+                if [ -n "${DX_GITHUB_TOKEN:-}" ]; then
+                  echo "Using configured GitHub token for private dependency ${owner}/${repository}."
+                  export DX_GITHUB_TOKEN
+                  askpass="$(mktemp)"
+                  cat > "${askpass}" \<<'EOF'
+            #!/usr/bin/env sh
+            case "$1" in
+              *Username*) printf "%s\n" "x-access-token" ;;
+              *Password*) printf "%s\n" "${DX_GITHUB_TOKEN}" ;;
+              *) printf "\n" ;;
+            esac
+            EOF
+                  chmod 700 "${askpass}"
+                  auth_url="https://x-access-token@github.com/${owner}/${repository}.git"
+                  GIT_ASKPASS="${askpass}" GIT_TERMINAL_PROMPT=0 git clone --depth 1 --branch "${selected_branch}" "${auth_url}" "${target}"
+                  status="$?"
+                  rm -f "${askpass}"
+                  return "${status}"
+                else
+                  echo "DX_GITHUB_TOKEN is not configured; trying unauthenticated dependency clone."
+                  git clone --depth 1 --branch "${selected_branch}" "${url}" "${target}"
+                fi
+              }
+              clone_dependency "${branch}" || clone_dependency "${fallback_branch}" || {
+                echo "Failed to clone dependency ${name} from ${owner}/${repository}. Private sibling dependencies require a scoped read token or an SSH key strategy." >&2
+                return 1
+              }
+            }
+
+            echo "No sibling Cargo dependencies are required."
+
+jobs:
+  linux-check:
+    docker:
+      - image: cimg/rust:1.94.0
+    resource_class: small
+    steps:
+      - checkout
+      - prepare_unix_workspace
+      - restore_cache:
+          keys:
+            - dx-media-cargo-{{ arch }}-{{ checksum "Cargo.lock" }}
+            - dx-media-cargo-{{ arch }}-
+      - run:
+          name: Cargo metadata
+          command: cargo metadata --locked --no-deps --format-version 1
+      - run:
+          name: Cargo check
+          command: |
+            cargo check --locked --lib --bin media
+      - save_cache:
+          key: dx-media-cargo-{{ arch }}-{{ checksum "Cargo.lock" }}
+          paths:
+            - ~/.cargo/registry
+            - ~/.cargo/git
+
+workflows:
+  validate:
+    jobs:
+      - linux-check:
+          filters:
+            branches:
+              only:
+                - main
+                - dev

@@ -1,0 +1,127 @@
+
+# Implementation Plan: DX Media Production Ready
+
+## Overview
+
+This implementation plan transforms the dx-media crate from a functional prototype into a production-ready codebase. Tasks are ordered to address foundational issues first (clippy, safety) before moving to documentation and testing improvements.
+
+## Tasks
+
+- Create constants module and document magic numbers
+- 1.1 Create `src/constants.rs` with documented constants-Add EARLY_EXIT_MULTIPLIER (3) with doc comment explaining purpose
+- Add DEFAULT_FAILURE_THRESHOLD (3) and DEFAULT_RESET_TIMEOUT_SECS (60)
+- Add DEFAULT_RATE_LIMIT_REQUESTS (100) and DEFAULT_RATE_LIMIT_WINDOW_SECS (60)
+- Add BASE_BACKOFF_MS (1000) and MAX_BACKOFF_JITTER_MS (500)
+- Requirements: 3.1, 3.2, 3.3, 3.4, 3.5
+- 1.2 Update lib.rs to export constants module-Add `pub mod constants;` declaration
+- Requirements: 3.1
+- 1.3 Update circuit_breaker.rs to use constants-Replace hardcoded 3 and 60 with constants
+- Requirements: 3.2
+- 1.4 Update http.rs to use constants-Replace hardcoded 1000ms backoff with constant
+- Requirements: 3.4
+- 1.5 Update search engine to use EARLY_EXIT_MULTIPLIER constant-Find and replace hardcoded 3x multiplier
+- Requirements: 3.1
+- -Implement safe lock handling in circuit breaker
+- 2.1 Refactor `allow_request()` to handle poisoned locks-Replace `.unwrap()` with match on `read()` result
+- Use `into_inner()` to recover from poisoned state
+- Add tracing::warn log on recovery
+- Requirements: 2.1, 2.2, 2.3
+- 2.2 Refactor `record_success()` to handle poisoned locks-Replace `.unwrap()` with match on `write()` result
+- Recover to Closed state on poisoning
+- Requirements: 2.1, 2.2, 2.4
+- 2.3 Refactor `record_failure()` to handle poisoned locks-Replace `.unwrap()` with match on `write()` result
+- Requirements: 2.1, 2.2
+- 2.4 Refactor `state()` getter to handle poisoned locks-Replace `.unwrap()` with recovery pattern
+- Requirements: 2.1, 2.2
+- 2.5 Refactor `reset()` to handle poisoned locks-Replace `.unwrap()` with recovery pattern
+- Requirements: 2.1, 2.2
+- 2.6 Write property test for lock poisoning recovery-Property 1: Lock Poisoning Recovery
+- Validates: Requirements 2.1, 2.3, 2.4
+- -Update User-Agent to honest identification
+- 3.1 Update USER_AGENT constant in lib.rs-Change from Chrome impersonation to `dx-media/VERSION (repo-url)`
+- Use `concat!` macro with `env!("CARGO_PKG_VERSION")`
+- Requirements: 4.1, 4.2, 4.3
+- -Improve builder error handling
+- 4.1 Add `#[deprecated]` attribute to `try_build()` method-Add deprecation message pointing to `build()` or `build_or_log()`
+- Requirements: 6.1
+- 4.2 Update `try_build()` to log warnings on failure-Add tracing::warn with missing field information
+- Requirements: 6.2
+- 4.3 Add `build_or_log()` method to MediaAssetBuilder-Log at debug level before returning None
+- Requirements: 6.3
+- 4.4 Write property test for builder error specificity-Property 3: Builder Error Message Specificity
+- Validates: Requirements 6.4
+- -Checkpoint
+- Verify core refactoring
+- Ensure all tests pass, ask the user if questions arise.
+- Run `cargo test` in crates/media
+- Verify no panics in circuit breaker tests
+- -Remove dead code and clean up
+- 6.1 Remove or use `timeout` field in HttpClient-Either use the field in request logic or remove it
+- Requirements: 7.4
+- 6.2 Search and remove `#[allow(dead_code)]` with "future use" comments-Remove the code or feature-gate it properly
+- Requirements: 7.1
+- -Remove blanket clippy suppressions
+- 7.1 Remove all `#![allow(clippy::...)]` from lib.rs except essential ones-Keep only: module_name_repetitions, similar_names (with justification)
+- Requirements: 1.1
+- 7.2 Run `cargo clippy
+- -
+- D warnings` and fix issues-Fix each warning at the source
+- Add item-level suppressions only where truly unavoidable
+- Requirements: 1.3, 1.4
+- 7.3 Add justification comments to remaining suppressions-Each suppression needs a comment explaining why
+- Requirements: 1.2
+- -Checkpoint
+- Verify clippy compliance
+- Ensure `cargo clippy
+- -
+- D warnings` passes
+- Ask the user if questions arise about specific warnings
+- -Add integration tests with wiremock
+- 9.1 Create test fixtures directory and sample responses-Create `tests/integration/fixtures/` directory
+- Add `nasa_success.json`, `nasa_error.json`
+- Add `openverse_success.json`, `openverse_malformed.json`
+- Requirements: 5.1, 5.2
+- 9.2 Add base URL configuration to providers for testing-Add `with_base_url()` constructor to NasaImagesProvider
+- Add `with_base_url()` constructor to OpenverseProvider
+- Requirements: 5.1
+- 9.3 Write NASA provider integration tests-Test successful search parsing
+- Test error handling for malformed responses
+- Requirements: 5.3, 5.4
+- 9.4 Write Openverse provider integration tests-Test successful search parsing
+- Test error handling for malformed responses
+- Requirements: 5.3, 5.4
+- 9.5 Write property test for provider parsing correctness-Property 2: Provider Response Parsing Correctness
+- Validates: Requirements 5.3, 5.4
+- 9.6 Write rate limiting integration test-Test that rate limiter delays requests appropriately
+- Requirements: 5.5
+- -Update documentation for production
+- 10.1 Update README.md with external dependencies section-Document FFmpeg, ImageMagick requirements
+- Specify minimum versions
+- Indicate which features require which tools
+- Requirements: 9.1, 9.3, 9.4
+- 10.2 Add Dockerfile or Docker example to documentation-Include all external dependencies
+- Requirements: 9.2
+- 10.3 Add troubleshooting section to README.md-Common deployment issues and solutions
+- Requirements: 9.5
+- 10.4 Update CHANGELOG.md with all changes-Follow Keep a Changelog format
+- Document breaking changes (try_build deprecation)
+- Requirements: 8.2, 8.3
+- 10.5 Remove "alpha" or "WIP" disclaimers from README.md-Requirements: 8.4
+- -Final version bump and release preparation
+- 11.1 Update version to 1.0.0 in Cargo.toml-Requirements: 8.1
+- 11.2 Final verification-Run full test suite
+- Run clippy
+- Verify documentation builds
+- -Final checkpoint
+- Ensure all tests pass, ask the user if questions arise.
+- Verify `cargo clippy
+- -
+- D warnings` passes
+- Verify `cargo doc` builds without warnings
+
+## Notes
+
+- All tasks are required for comprehensive production readiness
+- Property tests use proptest (already in dev-dependencies)
+- Integration tests use wiremock (already in dev-dependencies)
+- Checkpoints ensure incremental validation before proceeding

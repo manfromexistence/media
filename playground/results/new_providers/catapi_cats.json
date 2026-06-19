@@ -1,0 +1,203 @@
+{
+  "assets": [
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/27i.jpg",
+      "height": 679,
+      "id": "catapi_27i",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/27i.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/27i.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #1",
+      "width": 1024
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/37a.gif",
+      "height": 375,
+      "id": "catapi_37a",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/37a.gif",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/37a.gif",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #2",
+      "width": 500
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/3p2.gif",
+      "height": 240,
+      "id": "catapi_3p2",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/3p2.gif",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/3p2.gif",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #3",
+      "width": 380
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/6fd.jpg",
+      "height": 332,
+      "id": "catapi_6fd",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/6fd.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/6fd.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #4",
+      "width": 500
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/87n.jpg",
+      "height": 313,
+      "id": "catapi_87n",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/87n.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/87n.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #5",
+      "width": 500
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/ad1.jpg",
+      "height": 720,
+      "id": "catapi_ad1",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/ad1.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/ad1.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #6",
+      "width": 480
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/au1.jpg",
+      "height": 1124,
+      "id": "catapi_au1",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/au1.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/au1.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #7",
+      "width": 800
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/b58.jpg",
+      "height": 361,
+      "id": "catapi_b58",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/b58.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/b58.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #8",
+      "width": 500
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/MTc5OTM1NA.jpg",
+      "height": 720,
+      "id": "catapi_MTc5OTM1NA",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/MTc5OTM1NA.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/MTc5OTM1NA.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #9",
+      "width": 960
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://cdn2.thecatapi.com/images/Od-McTDZU.jpg",
+      "height": 2055,
+      "id": "catapi_Od-McTDZU",
+      "license": "The Cat API - Free",
+      "media_type": "image",
+      "preview_url": "https://cdn2.thecatapi.com/images/Od-McTDZU.jpg",
+      "provider": "catapi",
+      "source_url": "https://cdn2.thecatapi.com/images/Od-McTDZU.jpg",
+      "tags": [
+        "cat",
+        "animal",
+        "pet"
+      ],
+      "title": "Cat photo #10",
+      "width": 3195
+    }
+  ],
+  "duration_ms": 986,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "catapi"
+  ],
+  "query": "cats",
+  "returned_count": 10,
+  "total_count": 10
+}

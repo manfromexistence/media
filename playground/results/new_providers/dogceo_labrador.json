@@ -1,0 +1,108 @@
+{
+  "assets": [
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://images.dog.ceo/breeds/labrador/lab_young.jpg",
+      "height": null,
+      "id": "dog_lab_young.jpg",
+      "license": "Dog CEO - Free",
+      "media_type": "image",
+      "preview_url": "https://images.dog.ceo/breeds/labrador/lab_young.jpg",
+      "provider": "dogceo",
+      "source_url": "https://images.dog.ceo/breeds/labrador/lab_young.jpg",
+      "tags": [
+        "dog",
+        "labrador",
+        "animal"
+      ],
+      "title": "labrador dog photo",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://images.dog.ceo/breeds/labrador/n02099712_209.jpg",
+      "height": null,
+      "id": "dog_n02099712_209.jpg",
+      "license": "Dog CEO - Free",
+      "media_type": "image",
+      "preview_url": "https://images.dog.ceo/breeds/labrador/n02099712_209.jpg",
+      "provider": "dogceo",
+      "source_url": "https://images.dog.ceo/breeds/labrador/n02099712_209.jpg",
+      "tags": [
+        "dog",
+        "labrador",
+        "animal"
+      ],
+      "title": "labrador dog photo",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://images.dog.ceo/breeds/labrador/n02099712_4653.jpg",
+      "height": null,
+      "id": "dog_n02099712_4653.jpg",
+      "license": "Dog CEO - Free",
+      "media_type": "image",
+      "preview_url": "https://images.dog.ceo/breeds/labrador/n02099712_4653.jpg",
+      "provider": "dogceo",
+      "source_url": "https://images.dog.ceo/breeds/labrador/n02099712_4653.jpg",
+      "tags": [
+        "dog",
+        "labrador",
+        "animal"
+      ],
+      "title": "labrador dog photo",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://images.dog.ceo/breeds/labrador/n02099712_475.jpg",
+      "height": null,
+      "id": "dog_n02099712_475.jpg",
+      "license": "Dog CEO - Free",
+      "media_type": "image",
+      "preview_url": "https://images.dog.ceo/breeds/labrador/n02099712_475.jpg",
+      "provider": "dogceo",
+      "source_url": "https://images.dog.ceo/breeds/labrador/n02099712_475.jpg",
+      "tags": [
+        "dog",
+        "labrador",
+        "animal"
+      ],
+      "title": "labrador dog photo",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://images.dog.ceo/breeds/labrador/n02099712_788.jpg",
+      "height": null,
+      "id": "dog_n02099712_788.jpg",
+      "license": "Dog CEO - Free",
+      "media_type": "image",
+      "preview_url": "https://images.dog.ceo/breeds/labrador/n02099712_788.jpg",
+      "provider": "dogceo",
+      "source_url": "https://images.dog.ceo/breeds/labrador/n02099712_788.jpg",
+      "tags": [
+        "dog",
+        "labrador",
+        "animal"
+      ],
+      "title": "labrador dog photo",
+      "width": null
+    }
+  ],
+  "duration_ms": 471,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "dogceo"
+  ],
+  "query": "labrador",
+  "returned_count": 5,
+  "total_count": 5
+}

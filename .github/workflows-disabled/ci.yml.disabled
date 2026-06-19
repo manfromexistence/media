@@ -1,0 +1,71 @@
+# DX GitHub Actions temporarily disabled.
+# Controlled deactivation requested by essencefromexistence to preserve limited GitHub Actions minutes.
+# Keep this workflow disabled until essencefromexistence explicitly re-enables GitHub Actions for this repository.
+name: Rust CI
+
+on:
+  push:
+    branches: [main, master, dev]
+  pull_request:
+    branches: [main, master, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rust-ci-${{ github.repository }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_INCREMENTAL: "0"
+  CARGO_NET_RETRY: "3"
+  CARGO_TERM_COLOR: never
+
+jobs:
+  rust:
+    name: Format, check, lint, and test
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache Rust build outputs
+        uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+
+      - name: Detect lockfile mode
+        id: lockfile
+        shell: bash
+        run: |
+          if [ -f Cargo.lock ]; then
+            echo "args=--locked" >> "$GITHUB_OUTPUT"
+          else
+            echo "args=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Report formatting status
+        continue-on-error: true
+        run: cargo fmt --all -- --check
+
+      - name: Check workspace
+        run: cargo check ${{ steps.lockfile.outputs.args }} --workspace --all-targets -j1 --color never
+
+      - name: Report lint status
+        continue-on-error: true
+        run: cargo clippy ${{ steps.lockfile.outputs.args }} --workspace --all-targets -j1 --color never -- -D warnings
+
+      - name: Install FFmpeg for integration tests
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ffmpeg
+
+      - name: Test workspace
+        run: cargo test ${{ steps.lockfile.outputs.args }} --workspace -j1 --color never

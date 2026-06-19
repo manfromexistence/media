@@ -1,0 +1,52 @@
+{
+    "total": 500,
+    "totalHits": 500,
+    "hits": [
+        {
+            "id": 12345,
+            "pageURL": "https://pixabay.com/photos/flower-12345/",
+            "type": "photo",
+            "tags": "flower, nature, garden",
+            "previewURL": "https://cdn.pixabay.com/photo/flower_150.jpg",
+            "previewWidth": 150,
+            "previewHeight": 100,
+            "webformatURL": "https://cdn.pixabay.com/photo/flower_640.jpg",
+            "webformatWidth": 640,
+            "webformatHeight": 427,
+            "largeImageURL": "https://cdn.pixabay.com/photo/flower_1280.jpg",
+            "imageWidth": 1920,
+            "imageHeight": 1280,
+            "imageSize": 1234567,
+            "views": 10000,
+            "downloads": 5000,
+            "likes": 100,
+            "comments": 10,
+            "user_id": 1,
+            "user": "photographer1",
+            "userImageURL": "https://cdn.pixabay.com/user/photographer1.jpg"
+        },
+        {
+            "id": 67890,
+            "pageURL": "https://pixabay.com/photos/sunset-67890/",
+            "type": "photo",
+            "tags": "sunset, sky, clouds",
+            "previewURL": "https://cdn.pixabay.com/photo/sunset_150.jpg",
+            "previewWidth": 150,
+            "previewHeight": 100,
+            "webformatURL": "https://cdn.pixabay.com/photo/sunset_640.jpg",
+            "webformatWidth": 640,
+            "webformatHeight": 427,
+            "largeImageURL": "https://cdn.pixabay.com/photo/sunset_1280.jpg",
+            "imageWidth": 1920,
+            "imageHeight": 1280,
+            "imageSize": 2345678,
+            "views": 20000,
+            "downloads": 10000,
+            "likes": 200,
+            "comments": 20,
+            "user_id": 2,
+            "user": "photographer2",
+            "userImageURL": "https://cdn.pixabay.com/user/photographer2.jpg"
+        }
+    ]
+}

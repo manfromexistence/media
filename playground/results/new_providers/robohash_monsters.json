@@ -1,0 +1,113 @@
+{
+  "assets": [
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://robohash.org/monster_0?set=set2&size=300x300",
+      "height": 300,
+      "id": "robohash_set2_monster_0",
+      "license": "CC-BY",
+      "media_type": "image",
+      "preview_url": "https://robohash.org/monster_0?set=set2&size=150x150",
+      "provider": "robohash",
+      "source_url": "https://robohash.org/monster_0",
+      "tags": [
+        "avatar",
+        "monsters",
+        "generated",
+        "robohash"
+      ],
+      "title": "RoboHash monsters - monster_0",
+      "width": 300
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://robohash.org/monster_1?set=set2&size=300x300",
+      "height": 300,
+      "id": "robohash_set2_monster_1",
+      "license": "CC-BY",
+      "media_type": "image",
+      "preview_url": "https://robohash.org/monster_1?set=set2&size=150x150",
+      "provider": "robohash",
+      "source_url": "https://robohash.org/monster_1",
+      "tags": [
+        "avatar",
+        "monsters",
+        "generated",
+        "robohash"
+      ],
+      "title": "RoboHash monsters - monster_1",
+      "width": 300
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://robohash.org/monster_2?set=set2&size=300x300",
+      "height": 300,
+      "id": "robohash_set2_monster_2",
+      "license": "CC-BY",
+      "media_type": "image",
+      "preview_url": "https://robohash.org/monster_2?set=set2&size=150x150",
+      "provider": "robohash",
+      "source_url": "https://robohash.org/monster_2",
+      "tags": [
+        "avatar",
+        "monsters",
+        "generated",
+        "robohash"
+      ],
+      "title": "RoboHash monsters - monster_2",
+      "width": 300
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://robohash.org/monster_3?set=set2&size=300x300",
+      "height": 300,
+      "id": "robohash_set2_monster_3",
+      "license": "CC-BY",
+      "media_type": "image",
+      "preview_url": "https://robohash.org/monster_3?set=set2&size=150x150",
+      "provider": "robohash",
+      "source_url": "https://robohash.org/monster_3",
+      "tags": [
+        "avatar",
+        "monsters",
+        "generated",
+        "robohash"
+      ],
+      "title": "RoboHash monsters - monster_3",
+      "width": 300
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://robohash.org/monster_4?set=set2&size=300x300",
+      "height": 300,
+      "id": "robohash_set2_monster_4",
+      "license": "CC-BY",
+      "media_type": "image",
+      "preview_url": "https://robohash.org/monster_4?set=set2&size=150x150",
+      "provider": "robohash",
+      "source_url": "https://robohash.org/monster_4",
+      "tags": [
+        "avatar",
+        "monsters",
+        "generated",
+        "robohash"
+      ],
+      "title": "RoboHash monsters - monster_4",
+      "width": 300
+    }
+  ],
+  "duration_ms": 0,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "robohash"
+  ],
+  "query": "monster",
+  "returned_count": 5,
+  "total_count": 5
+}

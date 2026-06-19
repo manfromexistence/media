@@ -1,0 +1,111 @@
+{
+  "showcase": "DX-Media Search Performance Showcase",
+  "generated": "2024-12-05",
+  "description": "Concurrent search across 11 FREE providers + 2 scrapers (no API keys required)",
+  
+  "system_stats": {
+    "total_providers": 19,
+    "free_providers": 11,
+    "premium_providers": 8,
+    "scrapers": 2,
+    "total_sources_searched": 13,
+    "total_free_assets": "966M+"
+  },
+
+  "free_providers": [
+    {"name": "openverse", "assets": "700M+", "types": ["image", "audio"], "license": "CC/CC0"},
+    {"name": "wikimedia", "assets": "92M+", "types": ["image", "video", "audio"], "license": "Various"},
+    {"name": "europeana", "assets": "50M+", "types": ["image", "video", "audio", "document"], "license": "Various"},
+    {"name": "loc", "assets": "3M+", "types": ["image", "document", "audio", "video"], "license": "PD"},
+    {"name": "rijksmuseum", "assets": "700K+", "types": ["image"], "license": "CC0"},
+    {"name": "met", "assets": "500K+", "types": ["image"], "license": "CC0"},
+    {"name": "nasa", "assets": "140K+", "types": ["image", "video", "audio"], "license": "PD"},
+    {"name": "cleveland", "assets": "61K+", "types": ["image"], "license": "CC0"},
+    {"name": "artic", "assets": "50K+", "types": ["image"], "license": "CC0"},
+    {"name": "polyhaven", "assets": "3.7K+", "types": ["model3d", "image"], "license": "CC0"},
+    {"name": "picsum", "assets": "Unlimited", "types": ["image"], "license": "Unsplash"}
+  ],
+
+  "scrapers": [
+    {"name": "flickr", "description": "Flickr Commons and free photos"},
+    {"name": "nasa-gallery", "description": "NASA official gallery pages"}
+  ],
+
+  "benchmark_results": [
+    {
+      "file": "01_unified_sunset.json",
+      "query": "sunset",
+      "mode": "UNIFIED (--all)",
+      "sources_searched": 13,
+      "assets_returned": 54,
+      "duration_ms": 7625,
+      "notes": "All 11 providers + 2 scrapers searched concurrently"
+    },
+    {
+      "file": "02_unified_art.json",
+      "query": "monet painting",
+      "mode": "UNIFIED (--all)",
+      "sources_searched": 13,
+      "assets_returned": 44,
+      "duration_ms": 35210,
+      "notes": "Art-focused query, rich results from museum providers"
+    },
+    {
+      "file": "03_unified_audio.json",
+      "query": "jazz music",
+      "mode": "UNIFIED + TYPE FILTER",
+      "sources_searched": 13,
+      "assets_returned": 35,
+      "duration_ms": 32546,
+      "notes": "Audio-only filter, results from Openverse audio sources"
+    },
+    {
+      "file": "04_single_nasa.json",
+      "query": "nasa satellite",
+      "mode": "SINGLE PROVIDER",
+      "sources_searched": 1,
+      "assets_returned": 10,
+      "duration_ms": 937,
+      "notes": "Single provider search is fastest (<1 second)"
+    },
+    {
+      "file": "05_museums.json",
+      "query": "landscape",
+      "mode": "MULTI PROVIDER",
+      "sources_searched": 4,
+      "assets_returned": 19,
+      "duration_ms": 5091,
+      "notes": "4 museum providers: Met, Rijksmuseum, Cleveland, Art Institute"
+    }
+  ],
+
+  "performance_summary": {
+    "single_provider": "~0.9 seconds (10 results)",
+    "multi_provider_4x": "~5.1 seconds (19 results)",
+    "unified_all_13x": "~7-35 seconds (35-54 results)",
+    "concurrency": "All sources queried in parallel using Rust async/tokio + futures::join_all"
+  },
+
+  "cli_commands": {
+    "unified_search": "dx search \"sunset\" --all -n 5 --format json",
+    "single_provider": "dx search \"nasa satellite\" -P nasa -n 10 --format json",
+    "multi_provider": "dx search \"landscape\" -P met,rijksmuseum,cleveland,artic -n 5 --format json",
+    "type_filter": "dx search \"jazz\" -t audio --all --format json",
+    "list_providers": "dx providers"
+  },
+
+  "asset_schema": {
+    "id": "Unique asset identifier",
+    "provider": "Source provider name (11 free providers available)",
+    "title": "Asset title/name",
+    "author": "Creator/author name",
+    "download_url": "Direct download URL",
+    "preview_url": "Preview/thumbnail URL",
+    "source_url": "Original source page",
+    "media_type": "image | audio | video | document | model3d",
+    "width": "Width in pixels (images)",
+    "height": "Height in pixels (images)",
+    "license": "License type (CC0, CC-BY, PD, etc.)",
+    "tags": "Array of tags/keywords"
+  }
+}

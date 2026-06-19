@@ -1,0 +1,163 @@
+
+# Implementation Plan: DX Media 10/10 Quality
+
+## Overview
+
+This implementation plan systematically refactors dx-media to achieve 10/10 production quality by eliminating blanket clippy suppressions, removing dead code, and establishing idiomatic Rust patterns. Tasks are ordered to minimize compilation breakage during refactoring.
+
+## Tasks
+
+- Audit current state and establish baseline
+- 1.1 Count current crate-level suppressions in lib.rs-Run grep to count `#![allow(clippy::` occurrences
+- Document the current count (expected ~35-40)
+- Requirements: 1.1
+- 1.2 Count current item-level suppressions-Run grep to count `#[allow(clippy::` in src/
+- Document the current count
+- Requirements: 7.4
+- 1.3 Count dead_code attributes-Run grep to count `#[allow(dead_code)]` in src/
+- Document locations and reasons
+- Requirements: 2.1
+- 1.4 Run clippy with current suppressions removed-Temporarily remove suppressions and capture all warnings
+- Categorize warnings by type and location
+- Requirements: 1.2
+- -Clean up provider response structs (largest dead code source)
+- 2.1 Fix NASA provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.2 Fix Openverse provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.3 Fix Pixabay provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.4 Fix Pexels provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.5 Fix Unsplash provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.6 Fix Smithsonian provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.7 Fix Wikimedia provider response structs-Remove `#[allow(dead_code)]` attributes
+- Remove unused fields or change derive to only `Deserialize`
+- Requirements: 2.1, 8.1, 8.3
+- 2.8 Fix remaining provider response structs-Fix Picsum, Scryfall, Walters, XKCD, OpenLibrary providers
+- Remove all `#[allow(dead_code)]` from providers/
+- Requirements: 2.1, 8.1, 8.3
+- -Checkpoint
+- Verify provider cleanup
+- Run `cargo build` to ensure compilation
+- Run `cargo test
+- -lib` to ensure tests pass
+- Verify zero `#[allow(dead_code)]` in src/providers/
+- -Fix remaining dead code outside providers
+- 4.1 Fix DiceBear provider client field-Remove unused `client` field or use it
+- Requirements: 2.1
+- 4.2 Fix any remaining dead code in src/-Search for remaining `#[allow(dead_code)]`
+- Fix each occurrence
+- Requirements: 2.1
+- -Remove blanket style suppressions and fix at source
+- 5.1 Remove `uninlined_format_args` suppression and fix-Change `format!("{}", x)` to `format!("{x}")` throughout
+- Requirements: 4.4
+- 5.2 Remove `manual_string_new` suppression and fix-Change `String::from("")` to `String::new()` throughout
+- Requirements: 4.4
+- 5.3 Remove `single_match_else` suppression and fix-Convert single-arm matches to `if let` expressions
+- Requirements: 6.4
+- 5.4 Remove `implicit_clone` suppression and fix-Add explicit `.clone()` calls where needed
+- Requirements: 4.4
+- 5.5 Remove `option_if_let_else` suppression and fix-Use `map_or` or `map_or_else` instead
+- Requirements: 4.4
+- 5.6 Remove `manual_let_else` suppression and fix-Use `let... else` syntax where appropriate
+- Requirements: 6.4
+- 5.7 Remove `if_same_then_else` suppression and fix-Combine identical branches or restructure logic
+- Requirements: 6.4
+- -Checkpoint
+- Verify style fixes
+- Run `cargo clippy
+- -
+- D warnings`
+- Ensure no new warnings introduced
+- Run `cargo test
+- -lib`
+- -Fix numeric cast issues with item-level suppressions
+- 7.1 Audit all numeric casts in tools/-Find `as usize`, `as u32`, etc. patterns
+- Add item-level suppressions with LINT comments where safe
+- Use TryFrom where fallible conversion needed
+- Requirements: 3.1, 3.2
+- 7.2 Audit all numeric casts in engine/-Same process as 7.1
+- Requirements: 3.1, 3.2
+- 7.3 Audit all numeric casts in providers/-Same process as 7.1
+- Requirements: 3.1, 3.2
+- 7.4 Remove blanket cast suppressions from lib.rs-Remove `cast_possible_truncation`, `cast_sign_loss`, `cast_precision_loss`, `cast_lossless`
+- Requirements: 3.3
+- -Fix function signature issues
+- 8.1 Add `#[must_use]` to pure functions-Find functions that return values without side effects
+- Add `#[must_use]` attribute
+- Requirements: 5.1
+- 8.2 Fix needless_pass_by_value issues-Change ownership parameters to references where appropriate
+- Requirements: 5.3
+- 8.3 Fix too_many_arguments issues-Introduce options structs or builders for functions with >7 params
+- Requirements: 5.4
+- 8.4 Remove blanket function signature suppressions-Remove `must_use_candidate`, `return_self_not_must_use`, `needless_pass_by_value`, `too_many_arguments`
+- Requirements: 5.1, 5.2, 5.3, 5.4
+- -Checkpoint
+- Verify function signature fixes
+- Run `cargo clippy
+- -
+- D warnings`
+- Run `cargo test`
+- -Fix remaining control flow and style issues
+- 10.1 Fix `if_not_else` issues-Restructure if-else to put positive case first
+- Requirements: 6.1
+- 10.2 Fix `match_same_arms` issues-Combine identical match arms with `|` pattern
+- Requirements: 6.3
+- 10.3 Fix `match_wildcard_for_single_variants` issues-Use explicit variant names instead of `_`
+- Requirements: 6.4
+- 10.4 Remove remaining blanket control flow suppressions-Requirements: 6.4
+- -Clean up deprecated APIs
+- 11.1 Remove `try_build()` method-Ensure `build()` returns `Result<T, DxError>`
+- Remove deprecated `try_build()` entirely
+- Requirements: 10.3
+- 11.2 Update deprecation messages-Ensure all `#[deprecated]` have `since` and `note` fields
+- Requirements: 10.1, 10.4
+- -Final lib.rs cleanup
+- 12.1 Remove all temporary suppressions from lib.rs-Remove the "TEMPORARY SUPPRESSIONS" section entirely
+- Keep only the 6 justified suppressions
+- Requirements: 1.1, 1.4
+- 12.2 Update lib.rs documentation-Update the lint configuration comment to reflect final state
+- Requirements: 1.4
+- -Checkpoint
+- Verify final state
+- Run `cargo clippy
+- -
+- D warnings`
+- must pass
+- Run `cargo test`
+- must pass
+- Run `cargo doc
+- -no-deps`
+- must pass
+- Verify crate-level suppressions count = 6
+- Verify item-level suppressions count <= 50
+- -Write property tests for code quality
+- 14.1 Write property test for crate-level suppression compliance-Property 1: Crate-Level Suppression Compliance
+- Validates: Requirements 1.1, 1.4, 3.3, 4.4, 6.4
+- 14.2 Write property test for no dead_code on production code-Property 2: No Dead Code Attributes on Production Code
+- Validates: Requirements 2.1, 8.3
+- 14.3 Write property test for item-level suppression comments-Property 3: Item-Level Suppressions Have Justification Comments
+- Validates: Requirements 1.3, 3.2, 7.1, 7.2
+- 14.4 Write property test for item-level suppression count-Property 4: Item-Level Suppression Count Limit
+- Validates: Requirements 7.4
+- -Final verification
+- Run full test suite including property tests
+- Verify all correctness properties pass
+- Document final suppression counts in README or CHANGELOG
+
+## Notes
+
+- All tasks are required for comprehensive 10/10 quality
+- Each provider cleanup task can be done independently
+- Checkpoints ensure incremental validation
+- If a suppression truly cannot be removed, add item-level with LINT comment
+- Property tests verify the codebase maintains quality standards

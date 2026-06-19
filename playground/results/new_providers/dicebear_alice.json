@@ -1,0 +1,213 @@
+{
+  "assets": [
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/adventurer/svg?seed=alice_0",
+      "height": null,
+      "id": "dicebear_adventurer_0",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/adventurer/png?seed=alice_0&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/adventurer",
+      "tags": [
+        "avatar",
+        "adventurer",
+        "generated",
+        "svg"
+      ],
+      "title": "adventurer avatar - alice_0",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/adventurer-neutral/svg?seed=alice_1",
+      "height": null,
+      "id": "dicebear_adventurer-neutral_1",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/adventurer-neutral/png?seed=alice_1&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/adventurer-neutral",
+      "tags": [
+        "avatar",
+        "adventurer-neutral",
+        "generated",
+        "svg"
+      ],
+      "title": "adventurer-neutral avatar - alice_1",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/avataaars/svg?seed=alice_2",
+      "height": null,
+      "id": "dicebear_avataaars_2",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/avataaars/png?seed=alice_2&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/avataaars",
+      "tags": [
+        "avatar",
+        "avataaars",
+        "generated",
+        "svg"
+      ],
+      "title": "avataaars avatar - alice_2",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/avataaars-neutral/svg?seed=alice_3",
+      "height": null,
+      "id": "dicebear_avataaars-neutral_3",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/avataaars-neutral/png?seed=alice_3&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/avataaars-neutral",
+      "tags": [
+        "avatar",
+        "avataaars-neutral",
+        "generated",
+        "svg"
+      ],
+      "title": "avataaars-neutral avatar - alice_3",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/big-ears/svg?seed=alice_4",
+      "height": null,
+      "id": "dicebear_big-ears_4",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/big-ears/png?seed=alice_4&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/big-ears",
+      "tags": [
+        "avatar",
+        "big-ears",
+        "generated",
+        "svg"
+      ],
+      "title": "big-ears avatar - alice_4",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/big-ears-neutral/svg?seed=alice_5",
+      "height": null,
+      "id": "dicebear_big-ears-neutral_5",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/big-ears-neutral/png?seed=alice_5&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/big-ears-neutral",
+      "tags": [
+        "avatar",
+        "big-ears-neutral",
+        "generated",
+        "svg"
+      ],
+      "title": "big-ears-neutral avatar - alice_5",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/big-smile/svg?seed=alice_6",
+      "height": null,
+      "id": "dicebear_big-smile_6",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/big-smile/png?seed=alice_6&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/big-smile",
+      "tags": [
+        "avatar",
+        "big-smile",
+        "generated",
+        "svg"
+      ],
+      "title": "big-smile avatar - alice_6",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/bottts/svg?seed=alice_7",
+      "height": null,
+      "id": "dicebear_bottts_7",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/bottts/png?seed=alice_7&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/bottts",
+      "tags": [
+        "avatar",
+        "bottts",
+        "generated",
+        "svg"
+      ],
+      "title": "bottts avatar - alice_7",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/bottts-neutral/svg?seed=alice_8",
+      "height": null,
+      "id": "dicebear_bottts-neutral_8",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/bottts-neutral/png?seed=alice_8&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/bottts-neutral",
+      "tags": [
+        "avatar",
+        "bottts-neutral",
+        "generated",
+        "svg"
+      ],
+      "title": "bottts-neutral avatar - alice_8",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://api.dicebear.com/9.x/croodles/svg?seed=alice_9",
+      "height": null,
+      "id": "dicebear_croodles_9",
+      "license": "CC0",
+      "media_type": "image",
+      "preview_url": "https://api.dicebear.com/9.x/croodles/png?seed=alice_9&size=200",
+      "provider": "dicebear",
+      "source_url": "https://www.dicebear.com/styles/croodles",
+      "tags": [
+        "avatar",
+        "croodles",
+        "generated",
+        "svg"
+      ],
+      "title": "croodles avatar - alice_9",
+      "width": null
+    }
+  ],
+  "duration_ms": 0,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "dicebear"
+  ],
+  "query": "alice",
+  "returned_count": 10,
+  "total_count": 10
+}

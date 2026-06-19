@@ -1,0 +1,237 @@
+{
+  "assets": [
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001866/GSFC_20171208_Archive_e001866~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001866",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001866/GSFC_20171208_Archive_e001866~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001866/collection.json",
+      "tags": [
+        "NASA Satellite View of Antarctica",
+        "snow",
+        "ice",
+        "earth",
+        "space",
+        "antarctica",
+        "nasa"
+      ],
+      "title": "NASA Satellite View of Antarctica",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001778/GSFC_20171208_Archive_e001778~thumb.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001778",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001778/GSFC_20171208_Archive_e001778~thumb.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001778/collection.json",
+      "tags": [
+        "NASA's Aqua Satellite Celebrates 10th Annivesary",
+        "aqua",
+        "nasa",
+        "goddard"
+      ],
+      "title": "NASA's Aqua Satellite Celebrates 10th Annivesary",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001926/GSFC_20171208_Archive_e001926~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001926",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001926/GSFC_20171208_Archive_e001926~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001926/collection.json",
+      "tags": [
+        "NASA Satellite STEREO",
+        "sun",
+        "nasa",
+        "stereo",
+        "stereo360"
+      ],
+      "title": "NASA Satellite STEREO",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000802/GSFC_20171208_Archive_e000802~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e000802",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000802/GSFC_20171208_Archive_e000802~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000802/collection.json",
+      "tags": [
+        "NASA Satellite Captures Super Bowl Cities - Phoenix",
+        "earth",
+        "space",
+        "nasa",
+        "superbowl",
+        "2015",
+        "nasagoddard"
+      ],
+      "title": "NASA Satellite Captures Super Bowl Cities - Phoenix",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000800/GSFC_20171208_Archive_e000800~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e000800",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000800/GSFC_20171208_Archive_e000800~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000800/collection.json",
+      "tags": [
+        "NASA Satellite Captures Super Bowl Cities - Seattle",
+        "earth",
+        "space",
+        "nasa",
+        "superbowl",
+        "2015",
+        "nasagoddard"
+      ],
+      "title": "NASA Satellite Captures Super Bowl Cities - Seattle",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000690/GSFC_20171208_Archive_e000690~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e000690",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000690/GSFC_20171208_Archive_e000690~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000690/collection.json",
+      "tags": [
+        "Typhoon Chan-Hom \"Eyes\" NASA's Aqua Satellite"
+      ],
+      "title": "Typhoon Chan-Hom \"Eyes\" NASA's Aqua Satellite",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001444/GSFC_20171208_Archive_e001444~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001444",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001444/GSFC_20171208_Archive_e001444~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001444/collection.json",
+      "tags": [
+        "NASA's Terra satellite of Tropical Storm Andrea",
+        "weather",
+        "florida",
+        "earth",
+        "andrea",
+        "nasa",
+        "strom",
+        "tropicalstorm",
+        "goddard",
+        "tropicalstormandrea"
+      ],
+      "title": "NASA's Terra satellite of Tropical Storm Andrea",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001802/GSFC_20171208_Archive_e001802~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001802",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001802/GSFC_20171208_Archive_e001802~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001802/collection.json",
+      "tags": [
+        "NASA Satellites See Santa's North Pole",
+        "nasa",
+        "arctic",
+        "greenland",
+        "northpole",
+        "goddardspaceflightcenterspaceearthsatellite"
+      ],
+      "title": "NASA Satellites See Santa's North Pole",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001681/GSFC_20171208_Archive_e001681~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001681",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001681/GSFC_20171208_Archive_e001681~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001681/collection.json",
+      "tags": [
+        "NASA Satellite View of Tropical Storm Isaac",
+        "storm",
+        "isaac",
+        "hurricane",
+        "nasa",
+        "goddard",
+        "wether",
+        "tropicalstormisaac",
+        "tampastorm"
+      ],
+      "title": "NASA Satellite View of Tropical Storm Isaac",
+      "width": null
+    },
+    {
+      "author": "GSFC",
+      "author_url": null,
+      "download_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001367/GSFC_20171208_Archive_e001367~medium.jpg",
+      "height": null,
+      "id": "GSFC_20171208_Archive_e001367",
+      "license": "Public Domain",
+      "media_type": "image",
+      "preview_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001367/GSFC_20171208_Archive_e001367~medium.jpg",
+      "provider": "nasa",
+      "source_url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001367/collection.json",
+      "tags": [
+        "NASA Satellite Gives a Clear View for NASA's LADEE Launch",
+        "weather",
+        "nasa",
+        "rocket",
+        "launch",
+        "goddard",
+        "eastcoast",
+        "ladee"
+      ],
+      "title": "NASA Satellite Gives a Clear View for NASA's LADEE Launch",
+      "width": null
+    }
+  ],
+  "duration_ms": 937,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "nasa"
+  ],
+  "query": "nasa satellite",
+  "returned_count": 10,
+  "total_count": 9411
+}

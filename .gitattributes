@@ -1,0 +1,28 @@
+* text=auto
+
+.gitattributes text eol=lf
+
+*.rs text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+
+*.bmp binary
+*.gif binary
+*.glb binary
+*.gz binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.mp3 binary
+*.mp4 binary
+*.png binary
+*.tar binary
+*.webm binary
+*.webp binary
+*.woff2 binary
+*.zip binary

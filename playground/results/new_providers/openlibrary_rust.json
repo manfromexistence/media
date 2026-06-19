@@ -1,0 +1,73 @@
+{
+  "assets": [
+    {
+      "author": "James Patterson, Michael Ledwidge",
+      "author_url": null,
+      "download_url": "https://covers.openlibrary.org/b/id/187654-L.jpg",
+      "height": null,
+      "id": "openlibrary_OL167155W",
+      "license": "Open Library",
+      "media_type": "image",
+      "preview_url": "https://covers.openlibrary.org/b/id/187654-M.jpg",
+      "provider": "openlibrary",
+      "source_url": "https://openlibrary.org/works/OL167155W",
+      "tags": [],
+      "title": "Step on a Crack by James Patterson, Michael Ledwidge",
+      "width": null
+    },
+    {
+      "author": "James Patterson, Maxine Paetro, James Patterson Jr.",
+      "author_url": null,
+      "download_url": "https://covers.openlibrary.org/b/id/2786155-L.jpg",
+      "height": null,
+      "id": "openlibrary_OL167168W",
+      "license": "Open Library",
+      "media_type": "image",
+      "preview_url": "https://covers.openlibrary.org/b/id/2786155-M.jpg",
+      "provider": "openlibrary",
+      "source_url": "https://openlibrary.org/works/OL167168W",
+      "tags": [],
+      "title": "4th of July by James Patterson, Maxine Paetro, James Patterson Jr.",
+      "width": null
+    },
+    {
+      "author": "Irwin W. Rust",
+      "author_url": null,
+      "download_url": "https://covers.openlibrary.org/b/id/11843204-L.jpg",
+      "height": null,
+      "id": "openlibrary_OL24930712W",
+      "license": "Open Library",
+      "media_type": "image",
+      "preview_url": "https://covers.openlibrary.org/b/id/11843204-M.jpg",
+      "provider": "openlibrary",
+      "source_url": "https://openlibrary.org/works/OL24930712W",
+      "tags": [],
+      "title": "Creating training programs for cooperative directors by Irwin W. Rust",
+      "width": null
+    },
+    {
+      "author": "Bert W. Rust",
+      "author_url": null,
+      "download_url": "https://covers.openlibrary.org/b/id/8131910-L.jpg",
+      "height": null,
+      "id": "openlibrary_OL7310510W",
+      "license": "Open Library",
+      "media_type": "image",
+      "preview_url": "https://covers.openlibrary.org/b/id/8131910-M.jpg",
+      "provider": "openlibrary",
+      "source_url": "https://openlibrary.org/works/OL7310510W",
+      "tags": [],
+      "title": "Mathematical programming and the numerical solution of linear equations by Bert W. Rust",
+      "width": null
+    }
+  ],
+  "duration_ms": 1015,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "openlibrary"
+  ],
+  "query": "rust programming",
+  "returned_count": 4,
+  "total_count": 15
+}

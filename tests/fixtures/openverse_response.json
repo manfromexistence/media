@@ -1,0 +1,53 @@
+{
+    "result_count": 2,
+    "page_count": 1,
+    "page_size": 20,
+    "page": 1,
+    "results": [
+        {
+            "id": "abc123",
+            "title": "Beautiful Sunset",
+            "foreign_landing_url": "https://example.com/sunset",
+            "url": "https://example.com/sunset.jpg",
+            "thumbnail": "https://example.com/sunset_thumb.jpg",
+            "creator": "John Doe",
+            "creator_url": "https://example.com/johndoe",
+            "license": "cc-by",
+            "license_version": "4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "flickr",
+            "tags": [
+                {
+                    "name": "sunset"
+                },
+                {
+                    "name": "nature"
+                },
+                {
+                    "name": "sky"
+                }
+            ]
+        },
+        {
+            "id": "def456",
+            "title": "Mountain Landscape",
+            "foreign_landing_url": "https://example.com/mountain",
+            "url": "https://example.com/mountain.jpg",
+            "thumbnail": "https://example.com/mountain_thumb.jpg",
+            "creator": "Jane Smith",
+            "creator_url": "https://example.com/janesmith",
+            "license": "cc0",
+            "license_version": "1.0",
+            "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "source": "wikimedia",
+            "tags": [
+                {
+                    "name": "mountain"
+                },
+                {
+                    "name": "landscape"
+                }
+            ]
+        }
+    ]
+}

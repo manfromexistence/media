@@ -1,0 +1,113 @@
+[package]
+name = "dx-font"
+version = "0.1.0"
+edition = "2024"
+description = "A comprehensive font search and download tool with access to 50k+ commercial-free fonts"
+license = "MIT OR Apache-2.0"
+keywords = ["fonts", "typography", "download", "cli", "assets"]
+categories = ["command-line-utilities", "multimedia", "web-programming"]
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# HTTP client
+reqwest = { version = "0.12", features = [
+    "json",
+    "stream",
+    "gzip",
+    "brotli",
+    "deflate",
+] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+
+# Progress indicators
+indicatif = "0.17"
+console = "0.15"
+
+# Parallel processing
+rayon = "1.8"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Async utilities
+futures = "0.3"
+async-trait = "0.1"
+
+# URL handling
+url = "2.5"
+urlencoding = "2.1"
+
+# File system
+tokio-stream = "0.1"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# HTML parsing (for scraping font sites)
+scraper = "0.18"
+
+# Regex
+regex = "1.10"
+
+# Directory utilities
+dirs = "5.0"
+
+# Random number generation (for jitter in backoff)
+rand = "0.8"
+
+# Zip archive handling
+zip = { version = "6.0", default-features = false, features = ["deflate", "bzip2", "zstd"] }
+
+[dev-dependencies]
+# Property-based testing
+proptest = "1.4"
+
+# Temporary files for testing
+tempfile = "3.14"
+
+# Async testing
+tokio-test = "0.4"
+
+# HTTP mocking
+wiremock = "0.6"
+
+# Benchmarking
+criterion = { version = "0.5", features = ["async_tokio"] }
+
+[[bin]]
+name = "dx-font"
+path = "src/main.rs"
+
+[[bin]]
+name = "test_download"
+path = "test_download.rs"
+
+[[example]]
+name = "search_fonts"
+path = "playground/search_fonts.rs"
+
+[[example]]
+name = "download_fonts"
+path = "playground/download_fonts.rs"
+
+[[example]]
+name = "error_recovery"
+path = "examples/error_recovery.rs"
+
+[[example]]
+name = "advanced_usage"
+path = "examples/advanced_usage.rs"
+
+[[bench]]
+name = "parallel_search"
+harness = false

@@ -1,0 +1,93 @@
+{
+  "summary": {
+    "date": "2025-12-05",
+    "total_providers": 27,
+    "available_free": 18,
+    "needs_api_key": 8,
+    "disabled": 1
+  },
+  "new_providers_added": [
+    {
+      "name": "dogceo",
+      "display_name": "Dog CEO",
+      "status": "working",
+      "assets": "20K+ dog images",
+      "test_file": "dogceo_labrador.json"
+    },
+    {
+      "name": "catapi",
+      "display_name": "The Cat API",
+      "status": "working",
+      "assets": "60K+ cat images",
+      "test_file": "catapi_cats.json"
+    },
+    {
+      "name": "randomfox",
+      "display_name": "Random Fox",
+      "status": "working",
+      "assets": "Unlimited fox images",
+      "test_file": "randomfox.json"
+    },
+    {
+      "name": "dicebear",
+      "display_name": "DiceBear Avatars",
+      "status": "working",
+      "assets": "Unlimited avatar generation (25+ styles)",
+      "test_file": "dicebear_alice.json"
+    },
+    {
+      "name": "robohash",
+      "display_name": "RoboHash",
+      "status": "working",
+      "assets": "Unlimited robot/monster avatars",
+      "test_file": "robohash_monsters.json"
+    },
+    {
+      "name": "vanda",
+      "display_name": "V&A Museum",
+      "status": "working",
+      "assets": "1.2M+ art and design objects",
+      "test_file": "vanda_sculpture.json"
+    },
+    {
+      "name": "walters",
+      "display_name": "Walters Art Museum",
+      "status": "disabled",
+      "assets": "25K+ artworks",
+      "reason": "Cloudflare protection"
+    },
+    {
+      "name": "openlibrary",
+      "display_name": "Open Library",
+      "status": "working",
+      "assets": "30M+ book covers",
+      "test_file": "openlibrary_rust.json"
+    }
+  ],
+  "existing_providers": [
+    {"name": "openverse", "assets": "700M+ images and audio"},
+    {"name": "wikimedia", "assets": "92M+ files"},
+    {"name": "europeana", "assets": "50M+ items"},
+    {"name": "loc", "assets": "3M+ images"},
+    {"name": "rijksmuseum", "assets": "700K+ artworks"},
+    {"name": "met", "assets": "500K+ artworks"},
+    {"name": "nasa", "assets": "140K+ space images"},
+    {"name": "cleveland", "assets": "61K+ artworks"},
+    {"name": "artic", "assets": "50K+ artworks"},
+    {"name": "polyhaven", "assets": "3.7K+ 3D models, textures"},
+    {"name": "picsum", "assets": "Unlimited placeholder images"}
+  ],
+  "test_results": {
+    "unified_nature.json": {
+      "description": "Unified search across all providers for 'nature'",
+      "expected_sources": 18
+    }
+  },
+  "downloaded_samples": [
+    "dogceo/labrador.jpg",
+    "catapi/cat1.jpg",
+    "dicebear/alice_avatar.png",
+    "robohash/monster.png",
+    "randomfox/fox.jpg"
+  ]
+}

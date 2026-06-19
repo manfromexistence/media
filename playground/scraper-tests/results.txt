@@ -1,0 +1,24 @@
+PASS: StockSnap | Images | 3 assets | 1373ms
+PASS: Burst (Shopify) | Images | 3 assets | 3038ms
+PASS: Reshot | Images | 3 assets | 2425ms
+PASS: PicJumbo | Images | 3 assets | 2160ms
+PASS: Pixnio | Images | 3 assets | 1640ms
+WARN: FreeImages | Images | 0 assets | 1168ms
+PASS: FreeSound | Audio | 2 assets | 2238ms
+PASS: Mixkit | Audio | 3 assets | 534ms
+PASS: ZapSplat | Audio | 2 assets | 2153ms
+PASS: Coverr | Video | 2 assets | 3986ms
+PASS: Mazwai | Video | 2 assets | 2903ms
+PASS: Videvo | Video | 2 assets | 2049ms
+WARN: Sketchfab | 3D Models | 0 assets | 903ms
+WARN: TurboSquid Free | 3D Models | 0 assets | 593ms
+PASS: Clara.io | 3D Models | 3 assets | 4785ms
+WARN: Textures.com | Textures | 0 assets | 1166ms
+WARN: TextureLib | Textures | 0 assets | 28353ms
+PASS: Poliigon Free | Textures | 3 assets | 1137ms
+PASS: Flaticon | Vectors | 2 assets | 1698ms
+FAIL: SVG Repo | Vectors | error | 30108ms
+PASS: IconFinder | Vectors | 2 assets | 1228ms
+PASS: OpenGameArt | Game Assets | 1 assets | 1514ms
+PASS: itch.io Assets | Game Assets | 3 assets | 852ms
+PASS: Kenney | Game Assets | 3 assets | 2324ms

@@ -1,0 +1,98 @@
+{
+  "assets": [
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://framemark.vam.ac.uk/collections/2016JE5711//full/800,/0/default.jpg",
+      "height": null,
+      "id": "vanda_O1509934",
+      "license": "V&A - Educational Use",
+      "media_type": "image",
+      "preview_url": "https://framemark.vam.ac.uk/collections/2016JE5711//full/400,/0/default.jpg",
+      "provider": "vanda",
+      "source_url": "https://collections.vam.ac.uk/item/O1509934",
+      "tags": [
+        "sculpture"
+      ],
+      "title": "",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://framemark.vam.ac.uk/collections/2024NX9357//full/800,/0/default.jpg",
+      "height": null,
+      "id": "vanda_O1407602",
+      "license": "V&A - Educational Use",
+      "media_type": "image",
+      "preview_url": "https://framemark.vam.ac.uk/collections/2024NX9357//full/400,/0/default.jpg",
+      "provider": "vanda",
+      "source_url": "https://collections.vam.ac.uk/item/O1407602",
+      "tags": [
+        "Sculpture"
+      ],
+      "title": "Sculpture",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://framemark.vam.ac.uk/collections/2006BF1394//full/800,/0/default.jpg",
+      "height": null,
+      "id": "vanda_O24957",
+      "license": "V&A - Educational Use",
+      "media_type": "image",
+      "preview_url": "https://framemark.vam.ac.uk/collections/2006BF1394//full/400,/0/default.jpg",
+      "provider": "vanda",
+      "source_url": "https://collections.vam.ac.uk/item/O24957",
+      "tags": [
+        "Sculpture"
+      ],
+      "title": "Figure of Brahma",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://framemark.vam.ac.uk/collections/2006AU3440//full/800,/0/default.jpg",
+      "height": null,
+      "id": "vanda_O24959",
+      "license": "V&A - Educational Use",
+      "media_type": "image",
+      "preview_url": "https://framemark.vam.ac.uk/collections/2006AU3440//full/400,/0/default.jpg",
+      "provider": "vanda",
+      "source_url": "https://collections.vam.ac.uk/item/O24959",
+      "tags": [
+        "Sculpture"
+      ],
+      "title": "Sculpture",
+      "width": null
+    },
+    {
+      "author": null,
+      "author_url": null,
+      "download_url": "https://framemark.vam.ac.uk/collections/2006BF2729//full/800,/0/default.jpg",
+      "height": null,
+      "id": "vanda_O82516",
+      "license": "V&A - Educational Use",
+      "media_type": "image",
+      "preview_url": "https://framemark.vam.ac.uk/collections/2006BF2729//full/400,/0/default.jpg",
+      "provider": "vanda",
+      "source_url": "https://collections.vam.ac.uk/item/O82516",
+      "tags": [
+        "Sculpture"
+      ],
+      "title": "sculpture",
+      "width": null
+    }
+  ],
+  "duration_ms": 861,
+  "media_type": null,
+  "provider_errors": [],
+  "providers_searched": [
+    "vanda"
+  ],
+  "query": "sculpture",
+  "returned_count": 5,
+  "total_count": 22742
+}

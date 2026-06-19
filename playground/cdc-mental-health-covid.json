@@ -1,0 +1,500 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "yni7-er2q",
+      "name" : "Mental Health Care in the Last 4 Weeks",
+      "assetType" : "dataset",
+      "attribution" : "NCHS/DHIS",
+      "averageRating" : 0,
+      "category" : "National Center for Health Statistics",
+      "createdAt" : 1600866887,
+      "description" : "The U.S. Census Bureau, in collaboration with five federal agencies, launched the Household Pulse Survey to produce data on the social and economic impacts of Covid-19 on American households.  The Household Pulse Survey was designed to gauge the impact of the pandemic on employment status, consumer spending, food security, housing, education disruptions, and dimensions of physical and mental wellness.\n\nThe survey was designed to meet the goal of accurate and timely weekly estimates. It was conducted by an internet questionnaire, with invitations to participate sent by email and text message. The sample frame is the Census Bureau Master Address File Data. Housing units linked to one or more email addresses or cell phone numbers were randomly selected to participate, and one respondent from each housing unit was selected to respond for him or herself. Estimates are weighted to adjust for nonresponse and to match Census Bureau estimates of the population by age, sex, race and ethnicity, and educational attainment. All estimates shown meet the NCHS Data Presentation Standards for Proportions.\n\nUpdated on 3/31/2025 to comply with the President’s Executive Order 14168.",
+      "diciBackend" : false,
+      "displayType" : "table",
+      "downloadCount" : 72768,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "licenseId" : "USGOV_WORKS",
+      "locked" : false,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 38493099,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1652883251,
+      "publicationGroup" : 17587565,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1669661463,
+      "tableId" : 18700373,
+      "totalTimesRated" : 0,
+      "viewCount" : 21295,
+      "viewLastModified" : 1745252445,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1600871518,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 4704631,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1600871518,
+        "targetAudience" : "public",
+        "workflowId" : 2100,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1600871518,
+          "failureCount" : 0,
+          "startedAt" : 1600871518,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "ki96-txhe",
+          "displayName" : "NCHS"
+        }
+      } ],
+      "clientContext" : {
+        "clientContextVariables" : [ ],
+        "inheritedVariables" : { }
+      },
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 560598970,
+        "name" : "Indicator",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "indicator",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 116592585,
+        "cachedContents" : {
+          "non_null" : "10404",
+          "largest" : "Took Prescription Medication for Mental Health, Last 4 Weeks",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Took Prescription Medication for Mental Health And/Or Received Counseling or Therapy, Last 4 Weeks",
+            "count" : "2601"
+          }, {
+            "item" : "Needed Counseling or Therapy But Did Not Get It, Last 4 Weeks",
+            "count" : "2601"
+          }, {
+            "item" : "Received Counseling or Therapy, Last 4 Weeks",
+            "count" : "2601"
+          }, {
+            "item" : "Took Prescription Medication for Mental Health, Last 4 Weeks",
+            "count" : "2601"
+          } ],
+          "smallest" : "Needed Counseling or Therapy But Did Not Get It, Last 4 Weeks",
+          "count" : "10404",
+          "cardinality" : "4"
+        },
+        "format" : { }
+      }, {
+        "id" : 560598971,
+        "name" : "Group",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "group",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 116592586,
+        "cachedContents" : {
+          "non_null" : "10404",
+          "largest" : "National Estimate",
+          "null" : "0",
+          "top" : [ {
+            "item" : "By State",
+            "count" : "6732"
+          }, {
+            "item" : "By Age",
+            "count" : "1064"
+          }, {
+            "item" : "By Race/Hispanic ethnicity",
+            "count" : "760"
+          }, {
+            "item" : "By Education",
+            "count" : "608"
+          }, {
+            "item" : "By Sex",
+            "count" : "304"
+          }, {
+            "item" : "By Presence of Symptoms of Anxiety/Depression",
+            "count" : "304"
+          }, {
+            "item" : "By Disability status",
+            "count" : "168"
+          }, {
+            "item" : "By Sexual orientation",
+            "count" : "156"
+          }, {
+            "item" : "By Gender identity",
+            "count" : "156"
+          }, {
+            "item" : "National Estimate",
+            "count" : "152"
+          } ],
+          "smallest" : "By Age",
+          "count" : "10404",
+          "cardinality" : "10"
+        },
+        "format" : { }
+      }, {
+        "id" : 560598972,
+        "name" : "State",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "state",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 116592587,
+        "cachedContents" : {
+          "non_null" : "10404",
+          "largest" : "Wyoming",
+          "null" : "0",
+          "top" : [ {
+            "item" : "United States",
+            "count" : "3672"
+          }, {
+            "item" : "Texas",
+            "count" : "132"
+          }, {
+            "item" : "Oregon",
+            "count" : "132"
+          }, {
+            "item" : "Idaho",
+            "count" : "132"
+          }, {
+            "item" : "Alaska",
+            "count" : "132"
+          }, {
+            "item" : "Alabama",
+            "count" : "132"
+          }, {
+            "item" : "Oklahoma",
+            "count" : "132"
+          }, {
+            "item" : "North Carolina",
+            "count" : "132"
+          }, {
+            "item" : "Colorado",
+            "count" : "132"
+          }, {
+            "item" : "Mississippi",
+            "count" : "132"
+          }, {
+            "item" : "Florida",
+            "count" : "132"
+          }, {
+            "item" : "Vermont",
+            "count" : "132"
+          }, {
+            "item" : "Delaware",
+            "count" : "132"
+          }, {
+            "item" : "Nevada",
+            "count" : "132"
+          }, {
+            "item" : "Louisiana",
+            "count" : "132"
+          }, {
+            "item" : "New York",
+            "count" : "132"
+          }, {
+            "item" : "West Virginia",
+            "count" : "132"
+          }, {
+            "item" : "South Carolina",
+            "count" : "132"
+          }, {
+            "item" : "New Jersey",
+            "count" : "132"
+          }, {
+            "item" : "New Mexico",
+            "count" : "132"
+          } ],
+          "smallest" : "Alabama",
+          "count" : "10404",
+          "cardinality" : "52"
+        },
+        "format" : { }
+      }, {
+        "id" : 560598973,
+        "name" : "Subgroup",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "subgroup",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 116592588,
+        "cachedContents" : {
+          "non_null" : "10404",
+          "largest" : "Wyoming",
+          "null" : "0",
+          "top" : [ {
+            "item" : "60 - 69 years",
+            "count" : "152"
+          }, {
+            "item" : "United States",
+            "count" : "152"
+          }, {
+            "item" : "70 - 79 years",
+            "count" : "152"
+          }, {
+            "item" : "Bachelor's degree or higher",
+            "count" : "152"
+          }, {
+            "item" : "Male",
+            "count" : "152"
+          }, {
+            "item" : "Non-Hispanic, other races and multiple races",
+            "count" : "152"
+          }, {
+            "item" : "18 - 29 years",
+            "count" : "152"
+          }, {
+            "item" : "High school diploma or GED",
+            "count" : "152"
+          }, {
+            "item" : "Experienced symptoms of anxiety/depression in past 4 weeks",
+            "count" : "152"
+          }, {
+            "item" : "Non-Hispanic Black, single race",
+            "count" : "152"
+          }, {
+            "item" : "Female",
+            "count" : "152"
+          }, {
+            "item" : "Non-Hispanic Asian, single race",
+            "count" : "152"
+          }, {
+            "item" : "30 - 39 years",
+            "count" : "152"
+          }, {
+            "item" : "Some college/Associate's degree",
+            "count" : "152"
+          }, {
+            "item" : "50 - 59 years",
+            "count" : "152"
+          }, {
+            "item" : "Hispanic or Latino",
+            "count" : "152"
+          }, {
+            "item" : "80 years and above",
+            "count" : "152"
+          }, {
+            "item" : "Did not experience symptoms of anxiety/depression in the past 4 weeks",
+            "count" : "152"
+          }, {
+            "item" : "Non-Hispanic White, single race",
+            "count" : "152"
+          }, {
+            "item" : "40 - 49 years",
+            "count" : "152"
+          } ],
+          "smallest" : "18 - 29 years",
+          "count" : "10404",
+          "cardinality" : "80"
+        },
+        "format" : { }
+      }, {
+        "id" : 560598974,
+        "name" : "Phase",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "phase",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 130119112,
+        "cachedContents" : {
+          "non_null" : "10404",
+          "largest" : "3 (Oct 28 – Dec 21)",
+          "null" : "0",
+          "top" : [ {
+            "item" : "3.2",
+            "count" : "1920"
+          }, {
+            "item" : "3.1",
+            "count" : "1776"
+          }, {
+            "item" : "3 (Jan 6 – Mar 29)",
+            "count" : "1728"
+          }, {
+            "item" : "2",
+            "count" : "1440"
+          }, {
+            "item" : "3 (Oct 28 – Dec 21)",
+            "count" : "1152"
+          }, {
+            "item" : "3.3",
+            "count" : "960"
+          }, {
+            "item" : "3.4",
+            "count" : "960"
+          }, {
+            "item" : "-1",
+            "count" : "468"
+          } ],
+          "smallest" : "-1",
+          "count" : "10404",
+          "cardinality" : "8"
+        },
+        "format" : { }
+      }, {
+        "id" : 560598975,
+        "name" : "Time Period",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "time_period",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 116592590,
+        "cachedContents" : {
+          "non_null" : "10404",
+          "largest" : "45",
+          "null" : "0",
+          "top" : [ {
+            "item" : "1",
+            "count" : "468"
+          }, {
+            "item" : "35",
+            "count" : "320"
+          }, {
+            "item" : "43",
+            "count" : "320"
+          }, {
+            "item" : "42",
+            "count" : "320"
+          }, {
+            "item" : "37",
+            "count" : "320"
+          }, {
+            "item" : "34",
+            "count" : "320"
+          }, {
+            "item" : "39",
+            "count" : "320"
+          }, {
+            "item" : "41",
+            "count" : "320"
+          }, {
+            "item" : "44",
+            "count" : "320"
+          }, {
+            "item" : "38",
+            "count" : "320"
+          }, {
+            "item" : "40",
+            "count" : "320"
+          }, {
+            "item" : "36",
+            "count" : "320"
+          }, {
+            "item" : "45",
+            "count" : "320"
+          }, {
+            "item" : "29",
+            "count" : "296"
+          }, {
+            "item" : "33",
+            "count" : "296"
+          }, {
+            "item" : "32",
+            "count" : "296"
+          }, {
+            "item" : "30",
+            "count" : "296"
+          }, {
+            "item" : "31",
+            "count" : "296"
+          }, {
+            "item" : "28",
+            "count" : "296"
+          }, {
+            "item" : "23",
+            "count" : "288"
+          } ],
+          "smallest" : "1",
+          "count" : "10404",
+          "cardinality" : "34"
+        },
+        "format" : { }
+      }, {
+        "id" : 560598976,
+        "name" : "Time Period Label",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "time_period_label",
+        "position" : 7,
+        "renderTypeName" : "text",
