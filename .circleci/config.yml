@@ -1,4 +1,4 @@
-﻿version: 2.1
+version: 2.1
 
 orbs:
   win: circleci/windows@5.0
@@ -44,8 +44,52 @@ jobs:
       - store_artifacts:
           path: dist
 
+
+#  macos-release:
+#    macos:
+#      xcode: 15.0.0
+#    steps:
+#      - checkout
+#      - run:
+#          name: Install Rust
+#          command: |
+#            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+#      - run:
+#          name: Build MacOS release artifacts
+#          command: |
+#            source C:\Users\Computer/.cargo/env
+#            just build
+#            mkdir -p dist
+#            cp G:\Dx\bin\* dist/ 2>/dev/null || true
+#            if [ -n "$CIRCLE_SHA1" ]; then SHORT_SHA=$(echo $CIRCLE_SHA1 | cut -c1-12); else SHORT_SHA="local"; fi
+#            ARCHIVE="dx-macos-x86_64-$SHORT_SHA.tar.gz"
+#            tar -czvf dist/$ARCHIVE -C dist .
+#            cd dist && shasum -a 256 $ARCHIVE > SHA256SUMS.txt
+#      - store_artifacts:
+#          path: dist
+
+#  linux-release:
+#    docker:
+#      - image: cimg/rust:1.94
+#    steps:
+#      - checkout
+#      - run:
+#          name: Build Linux release artifacts
+#          command: |
+#            just build
+#            mkdir -p dist
+#            cp G:\Dx\bin\* dist/ 2>/dev/null || true
+#            if [ -n "$CIRCLE_SHA1" ]; then SHORT_SHA=$(echo $CIRCLE_SHA1 | cut -c1-12); else SHORT_SHA="local"; fi
+#            ARCHIVE="dx-linux-x86_64-$SHORT_SHA.tar.gz"
+#            tar -czvf dist/$ARCHIVE -C dist .
+#            cd dist && sha256sum $ARCHIVE > SHA256SUMS.txt
+#      - store_artifacts:
+#          path: dist
+
 workflows:
   release:
     when: << pipeline.parameters.release_artifacts >>
     jobs:
       - windows-release
+#      - macos-release
+#      - linux-release
