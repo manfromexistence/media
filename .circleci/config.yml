@@ -43,9 +43,18 @@ jobs:
             }
       - store_artifacts:
           path: dist
+      - run:
+          name: Upload artifact to GitHub release
+          shell: powershell.exe
+          command: |
+            choco install gh -y --no-progress --limit-output
+            $tag = "windows"
+            gh release create $tag --repo essence-dx/media --title "Windows Release" --target $env:CIRCLE_SHA1 2>$null || $true
+            gh release upload $tag dist\*.zip --repo essence-dx/media --clobber
 
 
-#  macos-release:
+
+# macos-release:
 #    macos:
 #      xcode: 15.0.0
 #    steps:
