@@ -61,12 +61,13 @@ jobs:
           command: |
             choco install gh -y --no-progress --limit-output
             $tag = "windows"
-            gh release create $tag --repo essence-dx/media --title "Windows Release" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
-            gh release upload $tag dist\*.zip --repo essence-dx/media --clobber
+            C:\ProgramData\chocolatey\bin\gh.exe release create $tag --repo essence-dx/media --title "Windows Release" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
+            C:\ProgramData\chocolatey\bin\gh.exe release upload $tag dist\*.zip --repo essence-dx/media --clobber
 
 workflows:
   release:
     when: << pipeline.parameters.release_artifacts >>
     jobs:
       - windows-release
+
 
