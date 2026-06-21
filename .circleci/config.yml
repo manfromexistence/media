@@ -72,8 +72,8 @@ jobs:
             refreshenv
             $env:GH_TOKEN = [System.Environment]::GetEnvironmentVariable("CIRCLECI_GH_TOKEN")
             $tag = "windows"
-            gh release create $tag --repo essence-dx/media --title "Windows Release" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
-            gh release upload $tag dist\*.zip --repo essence-dx/media --clobber
+            gh release create $tag --repo $env:CIRCLE_PROJECT_USERNAME/$env:CIRCLE_PROJECT_REPONAME --title "Windows Release" --target $env:CIRCLE_SHA1 2>$null; $LASTEXITCODE = 0
+            gh release upload $tag dist\*.zip --repo $env:CIRCLE_PROJECT_USERNAME/$env:CIRCLE_PROJECT_REPONAME --clobber
 
 workflows:
   release:
@@ -85,6 +85,7 @@ workflows:
 
 jobs:
       - windows-release
+
 
 
 
