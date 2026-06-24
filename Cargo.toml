@@ -226,3 +226,10 @@ assert-json-diff = "2"
 name = "search_bench"
 harness = false
 path = "benches/search_bench.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
